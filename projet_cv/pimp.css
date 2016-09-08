@@ -2,5 +2,15 @@ html{
 	font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
 }
 h1 {
-	/*font-weight: bold;
+	font-weight: bold;
+}
+
+.block {
+	display: flex;
+	flex-direction: row;
+}
+
+.block .header{
+	display: flex;
+	justify-content: flex-start;
 }

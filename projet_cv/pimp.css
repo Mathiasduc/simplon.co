@@ -2,26 +2,33 @@ html{
 	font-family: Garamond,Times,serif;
 }
 
+.head {
+	flex-wrap: wrap;
+}
+
 .title {
 	display: flex;
-		
-	
+	flex-direction: column;
 }
 
 .block {
-	display: flex;
+	/* display: flex;
+	flex-direction: column;*/
 	border: solid;
-	display: flex;
-	flex-direction: column;
 	margin: 10px;
-	padding: 10px;
-	max-width: 500px;	
+	padding: 20px;
 }
 
-.block .header{
+.head {
 	display: flex;
+	flex-wrap: wrap;
+	
+}
 
-	/*justify-content: flex-start;*/
+.block-1 {
+	/* display: inline-block; */
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .header {

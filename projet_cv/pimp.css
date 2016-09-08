@@ -1,16 +1,28 @@
 html{
-	font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+	font-family: Garamond,Times,serif;
 }
-h1 {
-	font-weight: bold;
+
+.title {
+	display: flex;
+		
+	
 }
 
 .block {
 	display: flex;
-	flex-direction: row;
+	border: solid;
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+	max-width: 500px;	
 }
 
 .block .header{
 	display: flex;
-	justify-content: flex-start;
+
+	/*justify-content: flex-start;*/
+}
+
+.header {
 }

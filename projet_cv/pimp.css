@@ -22,7 +22,9 @@ html{
 .head {
 	display: flex;
 	flex-wrap: wrap;
-	
+		justify-content: space-around;
+
+
 }
 
 .block-1 {

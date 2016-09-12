@@ -37,25 +37,32 @@
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 100px;
+	margin-top: 80px;
 }
  .image-big	{
  	margin-right: auto;
- 	margin-left: auto;	
+ 	margin-left: auto;
+ 	margin-bottom: 40px;
  }
 
 .title-h{
+	font-family: 'Roboto', sans-serif;
 	border: solid 4px #000000;
+	padding-right: 50px;
+	padding-left: 50px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 40px;
 	background-color: #CE6D39
 }
 
 .title-h h1 {
+	font-family: 'Roboto', sans-serif;
 	font-size: 45px;	
 }
 
 .title-h h4 {
+	font-family: 'Roboto', sans-serif;
 	margin-left: 20px;			
 	font-size: 24px;
 }
@@ -71,11 +78,33 @@
 
 }
 body{
+	font-family: 'Slabo 27px', serif;
 	background-color: #FFEEE4;
 }
 
 .footer {
+	border: solid 3px black;
 	display: flex;
 	justify-content: space-between;
 	margin-top: 80px;
+	width: 100%;
+	padding: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.legal {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.legal a{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+.legal span{
+	padding-right: 10px;
+	padding-left: 10px;
 }

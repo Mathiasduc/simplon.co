@@ -1,14 +1,54 @@
 html{
 	font-family: Garamond,Times,serif;
 }
-
+/* 
 .head {
-	flex-wrap: wrap;
+	max-width: 600px;
+} */
+
+
+/* 	.skills {
+	max-width: 600px;
+} */
+
+.col-left {
+	box-sizing: border-box;
 }
 
+.col-right {
+	box-sizing: border-box;
+}
+
+/* .head{
+	max-width: 600px;
+	max-height: 300px;
+	overflow: auto;
+} */
 .title {
+}
+
+.box-photo-adress {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	max-height: 300px;
+	overflow: auto;
+}
+
+.box-photo-mathias {
+	max-width: 30%;
+	float: right;
+}
+
+.box-photo-mathias img {
+	width: 100%;
+    height: auto;
+}
+
+.exp-degrees-block, .other-interest-block, .skills {
+	/* display: inline-block; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
 }
 
 .block {
@@ -17,21 +57,4 @@ html{
 	border: solid;
 	margin: 10px;
 	padding: 20px;
-}
-
-.head {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-
-
-}
-
-.block-1 {
-	/* display: inline-block; */
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.header {
 }

@@ -83,22 +83,42 @@ justify-content: center;
 	border-right: none;
 }
 
-.exp-degrees-block, .other-interest-block, .skills {
+.main {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;	
+	flex-direction: column;	
+	max-width: 1200px;
+	align-items: center;
+	margin: 0 auto 0 auto;
+
+}
+
+.exp-degrees{
+	display: flex;
 }
 
 .block {
 	border: solid;
 	margin: 10px;
-	padding: 20px;
+	padding: 0 20px 0 20px;
 }
 
-.col-left {
-	box-sizing: border-box;
+
+/* .skills {
+	margin: 0 auto 0 auto;
+} */
+
+.colls {	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
 }
 
-.col-right {
-	box-sizing: border-box;
+.col-left , .exp {
+	padding-right: 20px;
+/* 	border-right: 2px solid #ccc; */
+}
+
+.col-right, .degrees	{
+	padding-left: 20px;
 }

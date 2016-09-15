@@ -1,15 +1,19 @@
-html{
-	font-family: Garamond,Times,serif;
-}
 /* 
-.head {
-	max-width: 600px;
-} */
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); IE9 Compat Modes
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), IE6-IE8
+       url('webfont.woff2') format('woff2'), Super Modern Browsers
+       url('webfont.woff') format('woff'), Pretty Modern Browsers
+       url('webfont.ttf')  format('truetype'), Safari, Android, iOS
+       url('webfont.svg#svgFontName') format('svg'); Legacy iOS
+}
+ */
+body {
+	font-family: 'EB Garamond',serif;
+}
 
 
-/* 	.skills {
-	max-width: 600px;
-} */
 
 .col-left {
 	box-sizing: border-box;
@@ -19,30 +23,43 @@ html{
 	box-sizing: border-box;
 }
 
-/* .head{
-	max-width: 600px;
-	max-height: 300px;
-	overflow: auto;
-} */
+.head{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 .title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2em 0 2em 0;
+
+}
+.title span{
+	margin-right: 1em;
+	margin-left: 1em;
 }
 
 .box-photo-adress {
 	display: flex;
-	justify-content: center;
-	max-height: 300px;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2em;
+	max-width: 800px;
 	overflow: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .box-photo-mathias {
-	max-width: 30%;
-	float: right;
+	max-width: 18%;
 }
 
 .box-photo-mathias img {
+	/* flex: 1 1 0%; */
 	width: 100%;
     height: auto;
-}
+	}
 
 .exp-degrees-block, .other-interest-block, .skills {
 	/* display: inline-block; */

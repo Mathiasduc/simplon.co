@@ -1,14 +1,3 @@
-/* 
-@font-face {
-  font-family: 'MyWebFont';
-  src: url('webfont.eot'); IE9 Compat Modes
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), IE6-IE8
-       url('webfont.woff2') format('woff2'), Super Modern Browsers
-       url('webfont.woff') format('woff'), Pretty Modern Browsers
-       url('webfont.ttf')  format('truetype'), Safari, Android, iOS
-       url('webfont.svg#svgFontName') format('svg'); Legacy iOS
-}
- */
 body {
 	font-family: 'EB Garamond',serif;
 }
@@ -24,11 +13,12 @@ body {
 	flex-wrap: nowrap;
 	align-items: center;	
 	justify-content: center;
-	margin: 2em 0 2em 0;
+	margin: 1em 0 2em 0;
 
 }
 
 .title span{
+	font-size: 1.5em;
 	margin-right: 1em;
 	margin-left: 1em;
 }
@@ -57,21 +47,34 @@ body {
 .links-menu{
 	display: flex;
 	justify-content: space-around;
-	flex: 1 1 0%;
 	width: 100%;
     background: #f0f0f0;
     border: 1px solid #ccc;
-   /*  border-right: none;
-   border-left: none; */
-	font-size: 1.4em;
-	max-height: 1.8em;
+   	font-size: 1.5em;
 	margin-bottom: 1em;	
 }
 
+/* We'll set flex: 1 1 0 on each link, to make their widths equal 
+within the container. This property is a short-hand for setting 
+three specific flexbox properties:
+
+flex-grow: 1 indicates how the element expands as its container gets 
+larger. By default, the value is 0. We’ll set it to 1 so that the 
+link will expand as much as possible to fill the container.
+
+flex-shrink: 1 controls how the element shrinks as its container 
+gets smaller. By default, this value is 1. When we set it to 1, we 
+tell the card to shrink as much as it has to, to fit into its 
+container.
+
+flex-basis: 0 determines the size of the link before the remaining 
+space in its container is applied to it. By setting it to 0, we let 
+its size be solely determined by the size of the container. */
+
 .links-menu a {
-	display: flex;	
+	display: flex;
 	justify-content: center;
-	flex: 1 1 100%;
+	flex: 1 1 0%;
 	text-decoration: none;
   	color: #616161;
   	border-left: 1px solid #fff;
@@ -86,27 +89,41 @@ body {
 	border-right: none;
 }
 
-.rating {
+.main {
 	display: flex;
-	align-content: flex-start;
+}
+
+.main-boxes{
+	align-items: center;
+	font-size: 1.1em;
+
+}
+.side-bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0 1em 0 2em;
 }
 
 .stacked {
 	display: flex;
 	flex-direction: column;
-}
-
-.stars {
-	font-size: 2em;
-}
-
-.main {
-	display: flex;
-	flex-direction: column;	
-	max-width: 1200px;
 	align-items: center;
-	margin: 0 auto 0 auto;
+	max-width: 130px;
+	margin: 0 0 15px 0;
+}
 
+.stacked img {
+	max-width: 100%;
+    height: auto;
+}
+
+.stacked span {
+	font-size: 1.1em;
+}
+
+.rating {
+	margin-top: 10px;
 }
 
 .exp-degrees, .other-interest{
@@ -114,15 +131,10 @@ body {
 }
 
 .block {
-	border: solid;
+	border-top: 1px solid;
 	margin: 10px;
 	padding: 0 20px 0 20px;
 }
-
-
-/* .skills {
-	margin: 0 auto 0 auto;
-} */
 
 .colls {
 	display: flex;
@@ -139,3 +151,9 @@ body {
 .col-right, .degrees, .interest{
 	padding-left: 20px;
 }
+
+/* @media all and (max-width: 800px) {
+  .side-bar {
+    display: flex;	
+  }
+} */

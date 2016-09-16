@@ -18,13 +18,16 @@ body {
 	flex-direction: column;
 	justify-content: center;
 }
+
 .title {
 	display: flex;
+	flex-wrap: nowrap;
 	align-items: center;	
-justify-content: center;
+	justify-content: center;
 	margin: 2em 0 2em 0;
 
 }
+
 .title span{
 	margin-right: 1em;
 	margin-left: 1em;
@@ -66,7 +69,7 @@ justify-content: center;
 }
 
 .links-menu a {
-	display: flex;
+	display: flex;	
 	justify-content: center;
 	flex: 1 1 100%;
 	text-decoration: none;
@@ -83,6 +86,20 @@ justify-content: center;
 	border-right: none;
 }
 
+.rating {
+	display: flex;
+	align-content: flex-start;
+}
+
+.stacked {
+	display: flex;
+	flex-direction: column;
+}
+
+.stars {
+	font-size: 2em;
+}
+
 .main {
 	display: flex;
 	flex-direction: column;	
@@ -92,7 +109,7 @@ justify-content: center;
 
 }
 
-.exp-degrees{
+.exp-degrees, .other-interest{
 	display: flex;
 }
 
@@ -107,18 +124,18 @@ justify-content: center;
 	margin: 0 auto 0 auto;
 } */
 
-.colls {	
+.colls {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 }
 
-.col-left , .exp {
+.col-left , .exp, .other{
 	padding-right: 20px;
 /* 	border-right: 2px solid #ccc; */
 }
 
-.col-right, .degrees	{
+.col-right, .degrees, .interest{
 	padding-left: 20px;
 }

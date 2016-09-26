@@ -13,7 +13,7 @@ body {
 	flex-wrap: nowrap;
 	align-items: center;	
 	justify-content: center;
-	margin: 1em 0 2em 0;
+	margin: 0.8em 0 2em 0;
 
 }
 
@@ -27,8 +27,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 1.2em;
-	max-width: 800px;
+	font-size: 1.4em;
+	max-width: 700px;
 	overflow: auto;
 	margin-right: auto;
 	margin-left: auto;
@@ -36,7 +36,7 @@ body {
 }
 
 .box-photo-mathias {
-	max-width: 18%;
+	max-width: 22%;
 }
 
 .box-photo-mathias img {
@@ -109,7 +109,7 @@ its size be solely determined by the size of the container. */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 130px;
+	max-width: 100px;
 	margin: 0 0 15px 0;
 }
 

@@ -2,17 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>jQuery101</title>
+	<title>calc-easy</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="testance">
-	<input type="text" placeholder="testance">
-	<button name="button">click me!</button>
-	
-</div>
-	
-	<script src="jquery.min.js"></script>
-	<script src="app.js"></script>
+    <form action="#" onsubmit="return false;">
+        <div class="ui grid">
+            <div class="row">
+                <input type="text" class="six wide column centered" id="input-1">
+            </div>
+            <div class="row">
+            <input type="text" class="six wide column centered" id="input-2">
+            </div>
+            <div class="row">
+                <div class="six wide wide column centered" id="result">
+                   <h2> Your result here.</h2>
+                </div>
+            </div>
+            <div class="six column wide centered">
+            <select name="operator" id="operator" >
+                <option value="x">x</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="+">+</option>
+            </select>
+            <button id="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

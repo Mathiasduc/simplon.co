@@ -13,8 +13,9 @@ function iLike(pandaType,trend){
 	if(trend === "amour") {
 		alert("J'aime les pandas " + pandaType);
 	}
-	else if(pandaType === "mort" && trend == "haine")
+	else if(pandaType === "mort" && trend == "haine") {
 		alert("Satan souhaite la " + pandaType +" de tout les pandas")
+	}
 	else {
 		alert("Je n'aime pasles pandas " + pandaType);
 	}

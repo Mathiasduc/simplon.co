@@ -1,0 +1,159 @@
+body {
+	font-family: 'EB Garamond',serif;
+}
+
+.head{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;	
+	justify-content: center;
+	margin: 0.8em 0 2em 0;
+
+}
+
+.title span{
+	font-size: 1.5em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.box-photo-adress {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.4em;
+	max-width: 700px;
+	overflow: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1.5em;
+}
+
+.box-photo-mathias {
+	max-width: 22%;
+}
+
+.box-photo-mathias img {
+	width: 100%;
+	height: auto;
+}
+
+.links-menu{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+   	font-size: 1.5em;
+	margin-bottom: 1em;	
+}
+
+/* We'll set flex: 1 1 0 on each link, to make their widths equal 
+within the container. This property is a short-hand for setting 
+three specific flexbox properties:
+
+flex-grow: 1 indicates how the element expands as its container gets 
+larger. By default, the value is 0. We’ll set it to 1 so that the 
+link will expand as much as possible to fill the container.
+
+flex-shrink: 1 controls how the element shrinks as its container 
+gets smaller. By default, this value is 1. When we set it to 1, we 
+tell the card to shrink as much as it has to, to fit into its 
+container.
+
+flex-basis: 0 determines the size of the link before the remaining 
+space in its container is applied to it. By setting it to 0, we let 
+its size be solely determined by the size of the container. */
+
+.links-menu a {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 0%;
+	text-decoration: none;
+  	color: #616161;
+  	border-left: 1px solid #fff;
+  	border-right: 1px solid #ccc;
+}
+
+.links-menu a:first-child {
+	border-left: none;
+}
+
+.link-menu a:last-child {
+	border-right: none;
+}
+
+.main {
+	display: flex;
+}
+
+.main-boxes{
+	align-items: center;
+	font-size: 1.1em;
+
+}
+.side-bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0 1em 0 2em;
+}
+
+.stacked {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100px;
+	margin: 0 0 15px 0;
+}
+
+.stacked img {
+	max-width: 100%;
+    height: auto;
+}
+
+.stacked span {
+	font-size: 1.1em;
+}
+
+.rating {
+	margin-top: 10px;
+}
+
+.exp-degrees, .other-interest{
+	display: flex;
+}
+
+.block {
+	border-top: 1px solid;
+	margin: 10px;
+	padding: 0 20px 0 20px;
+}
+
+.colls {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.col-left , .exp, .other{
+	padding-right: 20px;
+/* 	border-right: 2px solid #ccc; */
+}
+
+.col-right, .degrees, .interest{
+	padding-left: 20px;
+}
+
+/* @media all and (max-width: 800px) {
+  .side-bar {
+    display: flex;	
+  }
+} */

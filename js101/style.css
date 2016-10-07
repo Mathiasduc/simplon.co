@@ -1,0 +1,9 @@
+.bar {
+	border: 3px solid red;
+	height: 150px;
+	width: 150px;
+	background-color: #124546;
+	color: red;
+	font-size: 80px;
+	text-align: center;
+}

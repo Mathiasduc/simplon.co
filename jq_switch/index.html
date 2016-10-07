@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Show me some</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+	<style>
+		body {
+			background-color: #E8CADD;
+		}
+		.image-holder {
+			height: 310px;
+			width: 310px;
+			border: solid 5px #E8B5D5;
+			background-color: #E861B6;
+			margin: 2em auto;
+		}
+		nav {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="holder" class="image-holder"></div>
+	<nav>
+		<div class="three ui buttons">
+			<button class="ui button" data-animal="cat">Cat</button>
+			<button class="ui button" data-animal="bear">Bear</button>
+			<button class="ui button" data-animal="fish">Fish</button>
+		</div>
+	</nav>
+
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

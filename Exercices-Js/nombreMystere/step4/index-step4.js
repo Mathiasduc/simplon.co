@@ -1,5 +1,5 @@
 $(document).ready(main);
-
+		
 var lives = 3;
 var max = 0;
 var min = 0;
@@ -62,9 +62,8 @@ function gettingClose(randominette){
 }
 
 function main(){
-	demarrerPartie()
+	demarrerPartie();
 	$("#validate_choice").on("click", function(){
-		//l un ou l autre
 		lives = $("#lives_choice")[0].value;
 		max = $("#max_choice").val();
 		min = $("#min_choice").val();
@@ -78,12 +77,12 @@ function main(){
 			closeArr = gettingClose(randominette);
 		}
 	});
+	
 	$("#validate").on("click", function(){
 		clickValider();
-		$("#lives").html(lives);
 		if (lives === 0){
 			partiePerdue();
-			demarrerPartie()
+			demarrerPartie();
 		}
 	});
 }
